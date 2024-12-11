@@ -3,56 +3,252 @@
   <head>
     <meta charset="utc-8">
     <title>Jo's Planet: Salad</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono">
     <!-- Made by Joanne Lang on December 10, 2024 -->
     <style>
+      tyle>
+      /*------------------ FONTS --------------------*/
+      @font-face {
+        font-family: Alagard;
+        src: url(alagard.ttf);
+      }
+
+      @font-face {
+        font-family: Custom;
+        src: url(CustomFontTtf12H10.ttf);
+      }
+
+      /*--------------------------------------------*/
+
+      body {
+        color: black;
+        background-color: #F2F2EF;
+        /*off-white*/
+        font-family: "IBM Plex Mono", "Lucida Console", monospace;
+        font-size: 0.9em;
+        line-height: 1.4em;
+      }
+
+      .header {
+        font-size: 0.9em;
+        height: 133px;
+        width: 100%;
+        padding: 10px;
+        background-color: #F2F2EF;
+        position: sticky;
+        top: 0;
+        z-index: 99;
+      }
+
+      #nav {
+        font-family: Custom;
+        font-size: 18px;
+        list-style-type: none;
+        padding: 0px 0px 0px 0px;
+        border-width: 1.5px 0px 1.5px 0px;
+        border-style: solid;
+        border-color: black;
+        margin: 0px 0px 0px 0px;
+        overflow: hidden;
+      }
+
+      li {
+        list-style-type: none;
+        float: right;
+      }
+
+      li a {
+        display: block;
+        color: #3C972F;
+        /*green*/
+        text-align: center;
+        padding: 0px 24px 15px 24px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        /*background-color: white;*/
+        color: #757575;
+        /*grey*/
+      }
+
+      .wrapper {
+        width: 1212px;
+        margin: 20px auto 20px auto;
+        background-color: #F2F2EF;
+      }
+
+      .small {
+        font-family: Alagard;
+        font-size: 30px;
+      }
+
+      .large {
+        font-family: Alagard;
+        font-size: 96px;
+      }
+
+      h2 {
+        font-family: Custom;
+        font-size: 30px;
+      }
+
+      .hleft {
+        margin: 110px 0px 90px 0px;
+      }
+
+      .hright {
+        margin: 110px 0px 0px 0px;
+        float: right;
+      }
+
+      #p1container {
+        margin: 90px 0px 0px 0px;
+      }
+
+      .p808 {
+        width: 808px;
+      }
+
+      .p404 {
+        width: 404px;
+      }
+
+      img {
+        width: 404px;
+        margin: 40px 0px 0px 0px;
+        float: left;
+      }
+
+      #text {
+        display: flex;
+        align-items: ;
+        justify-content: space-between;
+        margin: 370px 0px 0px 30px;
+        width: 778px;
+        float: right;
+      }
+
+      #text-left {
+        float: left;
+        margin: 0px 50px 0px 0px;
+      }
+
+      #text-right {
+        float: right;
+        text-align: right;
+      }
+
+      #container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 0px 90px 0px;
+        width: 1212px;
+        position: relative;
+        
+      }
+
+      .footer {
+        margin: 0px 0px 0px 0px;
+        border: 1.5px solid black;
+        border-width: 1.5px 0px 0px 0px;
+      }
+
+      .contact {
+        padding-right: 0px;
+        float: right;
+      }
+      
+      a.link:link {
+        color: #3C972F;
+      }
+
+      a.link:visited {
+        color: #1E4C18;
+      }
+
+      a.link:hover {
+        color: #757575;
+        text-decoration: none;
+      }
+
+      a.link:active {
+        color: white
+      }
     </style>
   </head>
   <body>
-    <!-- HEADER -->
-    <h1>Jo's Planet</h1>
-    <p>easy and affordable recipes for the average broke uni student</p>
-    <ul>
-      <li><a href="https://jo-langgg.github.io/jos-planet-home/">home</a></li>
-      <li><a href="https://jo-langgg.github.io/jos-planet-hors-doeuvres/">hors d'oeuvres</a></li>
-      <li><a href="https://jo-langgg.github.io/jos-planet-salad/">salad</a></li>
-      <li><a href="https://jo-langgg.github.io/jos-planet-entree/">entrée</a></li>
-      <li><a href="https://jo-langgg.github.io/jos-planet-dessert/">dessert</a></li>
-    </ul>
-    <hr>
-    <!------------>
+    <!--------------- HEADER ------------------->
+    <div class="header">
+      <h1>
+        <span class="small">Jo's Planet ੈ✩‧₊˚</span>
+      </h1>
+      <p><span class="slogan">easy and affordable recipes for the average broke uni student</span></p>
+      <div id="nav">
+        <ul>
+          <li><a href="https://jo-langgg.github.io/jos-planet-dessert/">dessert</a></li>
+          <li><a href="https://jo-langgg.github.io/jos-planet-entree/">entrée</a></li>
+          <li><a href="https://jo-langgg.github.io/jos-planet-salad/">salad</a></li>
+          <li><a href="https://jo-langgg.github.io/jos-planet-hors-doeuvres/">hors d'oeuvres</a></li>
+          <li><a href="https://jo-langgg.github.io/jos-planet-home/">home</a></li>
+        </ul>
+      </div>
+    </div>
+    <!------------ END OF HEADER --------------->
     
-    <!-- MAIN -->
-    <h1>
-      Salad
-    </h1>
-    <p>
-      What makes a salad, a salad? Can you just toss any number of random ingredients together and call it a day? From the brief research I did, yes. Yes, you can. There seems to be a variety of different salads out there, ranging from your typical caesar to more complicated grain and pasta salads. You can even make fruit salad! Just like the Wiggles did in the ‘90s. Heck, some people will even mix together whipped topping, canned fruit, marshmallows, and call it a salad (if this sounds like something you’d be into for some reason, check out this <a href="https://www.mybakingaddiction.com/ambrosia-salad-recipe/" target="_blank">Ambrosia Salad Recipe</a>).
-    </p>
-    <p>
-      I personally prefer my salads with no marshmallows or whipped topping. Try this simple Cabbage Salad that’s sure to be a yummy palate-cleanser during your four-course meal!
-    </p>
+    <!--------------- MAIN CONTENT ------------------->
+    <div class="wrapper">
+      <div class="hleft">
+        <h1><span class="large">Salad .｡*ﾟ.*.｡</span></h1>
+      </div>
+      <div id="p1container">
+        <div class="p808">
+          <p>
+            What makes a salad, a salad? Can you just toss any number of random ingredients together and call it a day? From the brief research I did, yes. Yes, you can. There seems to be a variety of different salads out there, ranging from your typical caesar to more complicated grain and pasta salads. You can even make fruit salad! Just like the Wiggles did in the ‘90s. Heck, some people will even mix together whipped topping, canned fruit, marshmallows, and call it a salad (if this sounds like something you’d be into for some reason, check out this <a class="link" href="https://www.mybakingaddiction.com/ambrosia-salad-recipe/">Ambrosia Salad Recipe</a>).<br><br>
+            I personally prefer my salads with no marshmallows or whipped topping. Try this simple Cabbage Salad that’s sure to be a yummy palate-cleanser during your four-course meal!
+          </p>
+        </div>
+      </div>
+
+
+      <div class="hright">
+        <h1><span class="large">.·:*¨ Cabbage Salad ¨*:·.</span></h1>
+      </div>
+      <div id="container">
+        <div id="photo">
+          <img src="cabbage_salad.jpg" alt="cabbage salad">
+        </div>
+        <div id="text">
+          <div id="text-left">
+            <p>
+              1. Shred your cabbage and carrot into thin slices (you can use a box grater, food processor, or sharp knife). Thinly slice your scallion as well.
+            </p>
+            <p>
+              2. (Optional) soak veggies in ice water for 20 min to get everything super, then drain and dry off excess moisture.
+            </p>
+            <p>
+              3. Drizzle some sesame dressing on top and voila! Crunchy, yummy cabbage salad in no time.
+            </p>
+          </div>
+          <div id="text-right">
+            <h2>ingredients</h2>
+            <p>cabbage</p>
+            <p>carrot</p>
+            <p>scallion</p>
+            <p>sesame dressing (you can find some at your local grocery store)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------ END OF MAIN CONTENT ---------------->
     
-    <img src="cabbage_salad.jpeg" alt="cabbage salad" width="20%">
-    <h1>Cabbage Salad</h1>
-    <p>
-      1. Shred your cabbage and carrot into thin slices (you can use a box grater, food processor, or sharp knife). Thinly slice your scallion as well.
-    </p>
-    <p>
-      2. (Optional) soak veggies in ice water for 20 min to get everything super, then drain and dry off excess moisture.
-    </p>
-    <p>
-      3. Drizzle some sesame dressing on top and voila! Crunchy, yummy cabbage salad in no time.
-    </p>
-    <h2>ingredients</h2>
-    <p>cabbage</p>
-    <p>carrot</p>
-    <p>scallion</p>
-    <p>sesame dressing (you can find some at your local grocery store)</p>
-    <!---------->
-    
-    <!-- FOOTER -->
-    <hr>
-    <p><a href="mailto:j2lang@uwaterloo.ca">SAY HI</a> :)</p>
-    <!------------>
+    <!--------------- FOOTER ------------------->
+    <div class="footer">
+      <div class="contact">
+        <p><a class="link" href="mailto:j2lang@uwaterloo.ca">SAY HI</a> :)</p>
+      </div>
+    </div>
+    <!----------- END OF FOOTER ---------------->
   </body>
 </html>
